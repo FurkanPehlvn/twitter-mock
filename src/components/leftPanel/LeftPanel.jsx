@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXTwitter } from "@fortawesome/free-brands-svg-icons";
-
+import { faHome, faBell, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import "./leftPanel.css";
 
 const LeftPanel = () => {
@@ -13,13 +13,20 @@ const LeftPanel = () => {
         </header>
         <nav>
           <NavLink to="/">
-            <span>Anasayfa</span>{" "}
+            <span>
+              {" "}
+              <FontAwesomeIcon icon={faHome} />
+              Anasayfa
+            </span>{" "}
           </NavLink>
           <NavLink to="/kesfet">
             <span>Keşfet</span>
           </NavLink>
           <NavLink to="/bildirimler">
-            <span>Bildirimler</span>{" "}
+            <span>
+              <FontAwesomeIcon icon={faBell} />
+              Bildirimler
+            </span>{" "}
           </NavLink>
           <NavLink to="/mesajlar">
             <span>Mesajlar</span>{" "}
